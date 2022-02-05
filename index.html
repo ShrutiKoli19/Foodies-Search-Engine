@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src = "index.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .header{
+            text-align: center;
+            font-size:50px;
+            font-weight:900;
+            color:yellow;
+            height: 100px;
+            padding: 10px;
+            padding-top: 50px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+
+        }
+
+        input{
+            border:none;
+            font-size:30px;
+            border: solid 3px #f1f1f1;
+            border-radius:10px;
+            color:black;
+        }
+
+        #search{
+            width: 100%;
+            height: 200px;
+            color: white;
+            margin-top: 100px;
+            margin-bottom:30px;
+            text-align: center;
+            border:none;
+        }
+
+        img{
+            border-radius: 10%;
+            margin: 10px;
+        }
+
+        button{
+            font-size: 30px;
+            border-radius: 10%;
+            color:white;
+            background-color: yellowgreen;
+            cursor: pointer;
+        }
+
+        body {
+        -webkit-animation: theme 21s linear infinite;
+                animation: theme 21s linear infinite;
+        }
+        body:after, body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        width: 100vmax;
+        height: 100vmax;
+        background: rgba(0, 0, 0, 0.05);
+        -webkit-animation: background 90s linear infinite;
+                animation: background 90s linear infinite;
+        }
+        body:after {
+        left: 15vw;
+        }
+        body:before {
+        right: 15vw;
+        -webkit-animation-delay: -30s;
+                animation-delay: -30s;
+        animation-direction: reverse;
+        }
+
+        @-webkit-keyframes theme {
+        0% {
+            background: #74C390;
+        }
+        16% {
+            background: #5DBDB6;
+        }
+        33% {
+            background: #59D4E1;
+        }
+        50% {
+            background: #51BCE8;
+        }
+        66% {
+            background: #FA5374;
+        }
+        83% {
+            background: #E46653;
+        }
+        100% {
+            background: #74C390;
+        }
+        }
+
+        @keyframes theme {
+        0% {
+            background: #74C390;
+        }
+        16% {
+            background: #5DBDB6;
+        }
+        33% {
+            background: #59D4E1;
+        }
+        50% {
+            background: #51BCE8;
+        }
+        66% {
+            background: #FA5374;
+        }
+        83% {
+            background: #E46653;
+        }
+        100% {
+            background: #74C390;
+        }
+        }
+        @-webkit-keyframes background {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+        @keyframes background {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">Foodies Search Engine</div>
+    <div id = "search">
+        <input type = "text" />
+        <button>Search</button>
+    <div>
+    <div class="recipe_container"></div>
+</body>
+</html>
